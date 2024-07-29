@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="tests" thread-count="6" verbose="3">
+    <test name="chrome test1">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.test.parallel.AppTest"></class>
+        </classes>
+    </test>
+    <test name="chrome test2">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.testng.SearchTests"></class>
+        </classes>
+    </test>
+    <test name="chrome test3">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="uname" value="rameshn3@gmail.com"></parameter>
+        <parameter name="pwd" value="Test@123"></parameter>
+        <classes>
+            <class name="com.testng.DependsOnMethodsParametersTest"></class>
+        </classes>
+    </test>
+    <test name="firefox test1">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.test.parallel.AppTest"></class>
+        </classes>
+    </test>
+    <test name="firefox test2">
+        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="uname" value="rameshn3@gmail.com"></parameter>
+        <parameter name="pwd" value="Test@123"></parameter>
+        <classes>
+            <class name="com.testng.DependsOnMethodsParametersTest"></class>
+        </classes>
+    </test>
+    <test name="edge test1">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="com.test.parallel.AppTest"></class>
+        </classes>
+    </test>
+    <test name="edge test2">
+        <parameter name="browser" value="edge"></parameter>
+        <parameter name="uname" value="rameshn3@gmail.com"></parameter>
+        <parameter name="pwd" value="Test@123"></parameter>
+        <classes>
+            <class name="com.testng.DependsOnMethodsParametersTest"></class>
+        </classes>
+    </test>
+
+</suite>

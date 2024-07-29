@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groups suite" verbose="2">
+    <test name="groups test">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="regression"/>
+            </run>
+        </groups>
+<classes>
+    <class name="com.testng.SearchTests"/>
+     <class name="com.testng.ZKDemoTest"/>
+</classes>
+    </test>
+</suite>

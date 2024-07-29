@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="methods" thread-count="6" verbose="3">
+    <test name="chrome test1">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.actions.ActionsTest">
+                <methods>
+                    <include name="dragAndDropTest"/>
+                    <include name="dragAndDropByTest"/>
+
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>
